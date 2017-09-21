@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.finder.activity.AirportDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_airportdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="@string/airportDetailsHeading"
+        android:elevation="@dimen/elevation"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_airportdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_airportdetails"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/text_padding"
+        android:elevation="@dimen/elevation"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.finder.view.CustomViewPagerView
+                android:id="@+id/viewPager_airportdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_airportdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewPager_airportdetails"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" />
+
+            <ScrollView
+                android:id="@+id/scrollView_airportdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroup_airportdetails"
+                android:layout_marginEnd="@dimen/horizontalMargin"
+                android:layout_marginLeft="@dimen/horizontalMargin"
+                android:layout_marginRight="@dimen/horizontalMargin"
+                android:layout_marginStart="@dimen/horizontalMargin">
+
+                <RelativeLayout
+                    android:id="@+id/details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView_airport_details_airportname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="@dimen/horizontalMargin"
+                        android:paddingTop="@dimen/topPadding"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/headingTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_airportdetails_airportdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_airport_details_airportname"
+                        android:gravity="start"
+                        android:paddingBottom="@dimen/horizontalMargin"
+                        android:paddingEnd="@dimen/horizontalMargin"
+                        android:paddingLeft="@dimen/horizontalMargin"
+                        android:paddingRight="@dimen/horizontalMargin"
+                        android:paddingStart="@dimen/horizontalMargin"
+                        android:textSize="@dimen/normalTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_airportdetails_addressheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_airportdetails_airportdata"
+                        android:gravity="start"
+                        android:paddingBottom="@dimen/horizontalMargin"
+                        android:paddingEnd="@dimen/text_padding"
+                        android:paddingLeft="@dimen/horizontalMargin"
+                        android:paddingRight="@dimen/text_padding"
+                        android:paddingStart="@dimen/horizontalMargin"
+                        android:text="@string/address"
+                        android:textSize="@dimen/normalTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_airportdetails_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_airportdetails_airportdata"
+                        android:layout_toEndOf="@id/textView_airportdetails_addressheading"
+                        android:layout_toRightOf="@id/textView_airportdetails_addressheading"
+                        android:gravity="start"
+                        android:paddingBottom="@dimen/horizontalMargin"
+                        android:paddingLeft="@dimen/text_padding"
+                        android:paddingStart="@dimen/text_padding"
+                        android:paddingEnd="@dimen/horizontalMargin"
+                        android:paddingRight="@dimen/horizontalMargin"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/normalTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_airportdetails_phonenumberheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_airportdetails_address"
+                        android:gravity="start"
+                        android:paddingBottom="@dimen/horizontalMargin"
+                        android:paddingEnd="@dimen/text_padding"
+                        android:paddingLeft="@dimen/horizontalMargin"
+                        android:paddingRight="@dimen/text_padding"
+                        android:paddingStart="@dimen/horizontalMargin"
+                        android:text="@string/phone"
+                        android:textSize="@dimen/normalTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_airportdetails_phonenumber"
+                        android:onClick="call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textView_airportdetails_address"
+                        android:layout_toEndOf="@id/textView_airportdetails_addressheading"
+                        android:layout_toRightOf="@id/textView_airportdetails_addressheading"
+                        android:gravity="start"
+                        android:paddingBottom="@dimen/horizontalMargin"
+                        android:paddingLeft="@dimen/text_padding"
+                        android:paddingStart="@dimen/text_padding"
+                        android:paddingEnd="@dimen/horizontalMargin"
+                        android:paddingRight="@dimen/horizontalMargin"
+                        android:textColor="@color/detailTextColor"
+                        android:textSize="@dimen/normalTextSize" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_airportdetails_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="call"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:elevation="@dimen/elevation"
+        android:src="@drawable/call"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/horizontalMargin"/>
+</RelativeLayout>

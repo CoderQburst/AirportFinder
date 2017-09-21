@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.finder.view.CustomNavigationHeaderImageView
+        android:id="@+id/imageview_airportdetails_viewpager"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_airportdetails_viewpager"
+        android:indeterminate="true"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/viewpagerprogreeBarMargin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
