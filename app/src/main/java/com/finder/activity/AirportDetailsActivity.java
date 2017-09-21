@@ -21,7 +21,7 @@ import com.airport.finder.R;
 import com.finder.adapter.ImageAdapter;
 import com.finder.network.NetworkApiCaller;
 import com.finder.transformer.ZoomOutPageTransformer;
-import com.finder.values.AirportDetails;
+import com.finder.data.AirportDetails;
 import com.finder.view.CustomViewPagerView;
 
 import org.json.JSONArray;
@@ -33,24 +33,24 @@ import java.util.ArrayList;
 
 import static android.support.v4.view.ViewPager.SCROLL_STATE_IDLE;
 import static android.support.v4.view.ViewPager.SCROLL_STATE_SETTLING;
-import static com.finder.values.Constants.ADDRESS;
-import static com.finder.values.Constants.AIRPORT_DETAILS_URL_ARRAY;
-import static com.finder.values.Constants.DATA;
-import static com.finder.values.Constants.DETAIL;
-import static com.finder.values.Constants.GET;
-import static com.finder.values.Constants.HOST_URL;
-import static com.finder.values.Constants.ID;
-import static com.finder.values.Constants.ILLEGAL_ACCESS_EXCEPTION;
-import static com.finder.values.Constants.IMAGES;
-import static com.finder.values.Constants.JSON_EXCEPTION;
-import static com.finder.values.Constants.MY_PERMISSIONS_REQUEST_CALL_PHONE;
-import static com.finder.values.Constants.NAME;
-import static com.finder.values.Constants.NO_SUCH_FIELD_EXCEPTION;
-import static com.finder.values.Constants.ON_CLICK_DELAY;
-import static com.finder.values.Constants.PHONE_NUMBER;
-import static com.finder.values.Constants.TELEPHONE_PREFIX;
-import static com.finder.values.Constants.VIEWPAGER_CURRENT_ITEM;
-import static com.finder.values.Constants.VIEWPAGER_DELAY;
+import static com.finder.data.Constants.ADDRESS;
+import static com.finder.data.Constants.AIRPORT_DETAILS_URL_ARRAY;
+import static com.finder.data.Constants.DATA;
+import static com.finder.data.Constants.DETAIL;
+import static com.finder.data.Constants.GET;
+import static com.finder.data.Constants.HOST_URL;
+import static com.finder.data.Constants.ID;
+import static com.finder.data.Constants.ILLEGAL_ACCESS_EXCEPTION;
+import static com.finder.data.Constants.IMAGES;
+import static com.finder.data.Constants.JSON_EXCEPTION;
+import static com.finder.data.Constants.MY_PERMISSIONS_REQUEST_CALL_PHONE;
+import static com.finder.data.Constants.NAME;
+import static com.finder.data.Constants.NO_SUCH_FIELD_EXCEPTION;
+import static com.finder.data.Constants.ON_CLICK_DELAY;
+import static com.finder.data.Constants.PHONE_NUMBER;
+import static com.finder.data.Constants.TELEPHONE_PREFIX;
+import static com.finder.data.Constants.VIEWPAGER_CURRENT_ITEM;
+import static com.finder.data.Constants.VIEWPAGER_DELAY;
 
 public class AirportDetailsActivity extends BaseActivity {
 

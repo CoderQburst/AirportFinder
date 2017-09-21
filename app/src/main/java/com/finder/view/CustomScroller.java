@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Scroller;
 
-import static com.finder.values.Constants.SCROLL_FACTOR;
+import static com.finder.data.Constants.SCROLL_FACTOR;
 
 @SuppressWarnings("WeakerAccess")
 public class CustomScroller extends Scroller {

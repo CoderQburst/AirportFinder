@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-import static com.finder.values.Constants.ON_CLICK_DELAY;
+import static com.finder.data.Constants.ON_CLICK_DELAY;
 
 public class ContactsRecyclerViewAdapter extends
         RecyclerView.Adapter<ContactsRecyclerViewAdapter.ViewHolder> {

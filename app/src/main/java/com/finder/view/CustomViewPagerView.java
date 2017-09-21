@@ -8,9 +8,9 @@ import android.view.animation.DecelerateInterpolator;
 
 import java.lang.reflect.Field;
 
-import static com.finder.values.Constants.ILLEGAL_ACCESS_EXCEPTION;
-import static com.finder.values.Constants.NO_SUCH_FIELD_EXCEPTION;
-import static com.finder.values.Constants.SCROLLER;
+import static com.finder.data.Constants.ILLEGAL_ACCESS_EXCEPTION;
+import static com.finder.data.Constants.NO_SUCH_FIELD_EXCEPTION;
+import static com.finder.data.Constants.SCROLLER;
 
 public class CustomViewPagerView extends ViewPager {
 

@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import com.airport.finder.R;
 import com.finder.activity.AirportDetailsActivity;
 import com.finder.activity.BaseActivity;
-import com.finder.values.Airports;
+import com.finder.data.Airports;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
@@ -34,13 +34,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 
-import static com.finder.values.Constants.AIRPORT;
-import static com.finder.values.Constants.ID;
-import static com.finder.values.Constants.INITIAL_ZOOM;
-import static com.finder.values.Constants.MAP_LOCATION_UPDATE_DELAY;
-import static com.finder.values.Constants.MAP_MINIMUM_ZOOM;
-import static com.finder.values.Constants.MARKER_TITLE;
-import static com.finder.values.Constants.MY_PERMISSIONS_REQUEST_FINE_LOCATION;
+import static com.finder.data.Constants.AIRPORT;
+import static com.finder.data.Constants.ID;
+import static com.finder.data.Constants.INITIAL_ZOOM;
+import static com.finder.data.Constants.MAP_LOCATION_UPDATE_DELAY;
+import static com.finder.data.Constants.MAP_MINIMUM_ZOOM;
+import static com.finder.data.Constants.MARKER_TITLE;
+import static com.finder.data.Constants.MY_PERMISSIONS_REQUEST_FINE_LOCATION;
 
 
 public class MapViewFragment extends Fragment implements OnMapReadyCallback,

@@ -16,19 +16,19 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
-import static com.finder.values.Constants.BUTTON_CLICK_DELAY;
-import static com.finder.values.Constants.DATA;
-import static com.finder.values.Constants.EMAIL;
-import static com.finder.values.Constants.EXECUTION_EXCEPTION;
-import static com.finder.values.Constants.FULL_NAME;
-import static com.finder.values.Constants.GET;
-import static com.finder.values.Constants.HOST_URL;
-import static com.finder.values.Constants.INTERRUPTED_EXCEPTION;
-import static com.finder.values.Constants.JSON_EXCEPTION;
-import static com.finder.values.Constants.LOGIN_DETAILS_API_URL;
-import static com.finder.values.Constants.PROFILE_PICTURE_URL;
-import static com.finder.values.Constants.STORED_EMAILS;
-import static com.finder.values.Constants.STORED_PASSWORDS;
+import static com.finder.data.Constants.BUTTON_CLICK_DELAY;
+import static com.finder.data.Constants.DATA;
+import static com.finder.data.Constants.EMAIL;
+import static com.finder.data.Constants.EXECUTION_EXCEPTION;
+import static com.finder.data.Constants.FULL_NAME;
+import static com.finder.data.Constants.GET;
+import static com.finder.data.Constants.HOST_URL;
+import static com.finder.data.Constants.INTERRUPTED_EXCEPTION;
+import static com.finder.data.Constants.JSON_EXCEPTION;
+import static com.finder.data.Constants.LOGIN_DETAILS_API_URL;
+import static com.finder.data.Constants.PROFILE_PICTURE_URL;
+import static com.finder.data.Constants.STORED_EMAILS;
+import static com.finder.data.Constants.STORED_PASSWORDS;
 
 public class LogInActivity extends BaseActivity {
 

@@ -23,13 +23,13 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import static com.finder.values.Constants.EMAIL;
-import static com.finder.values.Constants.JSON_EXCEPTION;
-import static com.finder.values.Constants.MY_PERMISSIONS_REQUEST_CALL_PHONE;
-import static com.finder.values.Constants.NAME;
-import static com.finder.values.Constants.PROFILE_PICTURE;
-import static com.finder.values.Constants.STATUS;
-import static com.finder.values.Constants.STATUS_OK;
+import static com.finder.data.Constants.EMAIL;
+import static com.finder.data.Constants.JSON_EXCEPTION;
+import static com.finder.data.Constants.MY_PERMISSIONS_REQUEST_CALL_PHONE;
+import static com.finder.data.Constants.NAME;
+import static com.finder.data.Constants.PROFILE_PICTURE;
+import static com.finder.data.Constants.STATUS;
+import static com.finder.data.Constants.STATUS_OK;
 import static java.net.HttpURLConnection.HTTP_CLIENT_TIMEOUT;
 
 public class BaseActivity extends AppCompatActivity {

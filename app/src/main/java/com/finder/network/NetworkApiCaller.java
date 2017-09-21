@@ -18,16 +18,16 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static com.finder.values.Constants.ERROR;
-import static com.finder.values.Constants.GET;
-import static com.finder.values.Constants.IO_EXCEPTION;
-import static com.finder.values.Constants.JSON_EXCEPTION;
-import static com.finder.values.Constants.NETWORK_ERROR;
-import static com.finder.values.Constants.POST;
-import static com.finder.values.Constants.REQUEST_HEADING;
-import static com.finder.values.Constants.REQUEST_HEADING_TYPE;
-import static com.finder.values.Constants.STATUS;
-import static com.finder.values.Constants.UTF_CHARSET;
+import static com.finder.data.Constants.ERROR;
+import static com.finder.data.Constants.GET;
+import static com.finder.data.Constants.IO_EXCEPTION;
+import static com.finder.data.Constants.JSON_EXCEPTION;
+import static com.finder.data.Constants.NETWORK_ERROR;
+import static com.finder.data.Constants.POST;
+import static com.finder.data.Constants.REQUEST_HEADING;
+import static com.finder.data.Constants.REQUEST_HEADING_TYPE;
+import static com.finder.data.Constants.STATUS;
+import static com.finder.data.Constants.UTF_CHARSET;
 import static java.net.HttpURLConnection.HTTP_OK;
 
 public class NetworkApiCaller extends AsyncTask<String, Void, String> {

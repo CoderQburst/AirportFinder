@@ -11,8 +11,8 @@ import android.support.v4.content.ContextCompat;
 
 import com.airport.finder.R;
 
-import static com.finder.values.Constants.GOOGLE_ACCOUNT;
-import static com.finder.values.Constants.MY_PERMISSIONS_REQUEST_CONTACT_INFO;
+import static com.finder.data.Constants.GOOGLE_ACCOUNT;
+import static com.finder.data.Constants.MY_PERMISSIONS_REQUEST_CONTACT_INFO;
 
 public class SplashScreenActivity extends BaseActivity {
 

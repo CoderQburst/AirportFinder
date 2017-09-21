@@ -3,8 +3,8 @@ package com.finder.transformer;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-import static com.finder.values.Constants.VIEWPAGER_TRANSFORMER_MIN_ALPHA;
-import static com.finder.values.Constants.VIEWPAGER_TRANSFORMER_MIN_SCALE;
+import static com.finder.data.Constants.VIEWPAGER_TRANSFORMER_MIN_ALPHA;
+import static com.finder.data.Constants.VIEWPAGER_TRANSFORMER_MIN_SCALE;
 
 public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
 

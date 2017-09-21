@@ -23,7 +23,7 @@ import com.airport.finder.R;
 import com.finder.fragment.ContactsFragment;
 import com.finder.fragment.MapViewFragment;
 import com.finder.network.NetworkApiCaller;
-import com.finder.values.Airports;
+import com.finder.data.Airports;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
@@ -34,23 +34,23 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-import static com.finder.values.Constants.AIRPORT;
-import static com.finder.values.Constants.DATA;
-import static com.finder.values.Constants.DRAWABLE;
-import static com.finder.values.Constants.EMAIL;
-import static com.finder.values.Constants.GET;
-import static com.finder.values.Constants.HOST_URL;
-import static com.finder.values.Constants.ID;
-import static com.finder.values.Constants.JSON_EXCEPTION;
-import static com.finder.values.Constants.LATITUDE;
-import static com.finder.values.Constants.LONGITUDE;
-import static com.finder.values.Constants.MENU;
-import static com.finder.values.Constants.MENU_DATA;
-import static com.finder.values.Constants.NAME;
-import static com.finder.values.Constants.PHONE_NUMBER;
-import static com.finder.values.Constants.PROFILE_PICTURE;
-import static com.finder.values.Constants.TELEPHONE_PREFIX;
-import static com.finder.values.Constants.UI_DETAILS_API_URL;
+import static com.finder.data.Constants.AIRPORT;
+import static com.finder.data.Constants.DATA;
+import static com.finder.data.Constants.DRAWABLE;
+import static com.finder.data.Constants.EMAIL;
+import static com.finder.data.Constants.GET;
+import static com.finder.data.Constants.HOST_URL;
+import static com.finder.data.Constants.ID;
+import static com.finder.data.Constants.JSON_EXCEPTION;
+import static com.finder.data.Constants.LATITUDE;
+import static com.finder.data.Constants.LONGITUDE;
+import static com.finder.data.Constants.MENU;
+import static com.finder.data.Constants.MENU_DATA;
+import static com.finder.data.Constants.NAME;
+import static com.finder.data.Constants.PHONE_NUMBER;
+import static com.finder.data.Constants.PROFILE_PICTURE;
+import static com.finder.data.Constants.TELEPHONE_PREFIX;
+import static com.finder.data.Constants.UI_DETAILS_API_URL;
 
 public class HomeActivity extends BaseActivity
         implements NavigationView.OnNavigationItemSelectedListener,

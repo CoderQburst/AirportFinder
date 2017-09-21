@@ -1,4 +1,4 @@
-package com.finder.values;
+package com.finder.data;
 
 import java.util.ArrayList;
 

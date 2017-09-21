@@ -12,11 +12,11 @@ import android.view.ViewGroup;
 import com.airport.finder.R;
 import com.finder.activity.BaseActivity;
 import com.finder.adapter.ContactsRecyclerViewAdapter;
-import com.finder.values.Airports;
+import com.finder.data.Airports;
 
 import java.util.ArrayList;
 
-import static com.finder.values.Constants.AIRPORT;
+import static com.finder.data.Constants.AIRPORT;
 
 public class ContactsFragment extends Fragment {
 
